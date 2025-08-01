@@ -630,7 +630,7 @@ const settingsCurrentMojangAccounts = document.getElementById('settingsCurrentMo
  */
 async function fetchSkinAndConvertToBase64(username) {
   try {
-    const skinURL = `https://auth.zelthoriaismp.cloud/skin/${username}.png`;
+    const skinURL = `https://ru.namemc.com/skin/0c55438d4e1478de`;
     const response = await fetch(skinURL);
 
     if (!response.ok) {
@@ -1067,7 +1067,12 @@ async function reloadDropinMods(){
 //Languages
 let langCodes = {
     "en_US": "English",
-    "pt_BR": "Portugues-BR",
+    "pt_BR": "Português-BR",
+    "ru_RU": "Русский",
+    "uk_UA": "Українська",
+    "be_BY": "Беларускі",
+    "pl_PL": "Polski",
+    "de_DE": "Deutsch",
 } 
 
 async function resolveLanguageForUI() {

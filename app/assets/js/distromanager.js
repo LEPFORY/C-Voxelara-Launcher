@@ -4,7 +4,7 @@ const ConfigManager = require('./configmanager')
 
 // Old WesterosCraft url.
 // exports.REMOTE_DISTRO_URL = 'https://zelthoriaismp.cloud/nebula/distribution.json'
-exports.REMOTE_DISTRO_URL = 'https://zelthoriaismp.cloud/nebula/distribution.json'
+exports.REMOTE_DISTRO_URL = 'https://hm380678.webhm.pro/Nebula6/distribution.json'
 
 const api = new DistributionAPI(
     ConfigManager.getLauncherDirectory(),
