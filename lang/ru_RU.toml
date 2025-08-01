@@ -344,7 +344,7 @@ accountGoneDesc = "Аккаунт был мигрирован на Microsoft. П
 unreachableTitle = "Ошибка входа:<br>Сервер недоступен"
 unreachableDesc = "Не удалось связаться с сервером авторизации. Проверьте соединение с интернетом."
 gameNotPurchasedTitle = "Ошибка входа:<br>Игра не куплена"
-gameNotPurchasedDesc = "Аккаунт, с которым вы пытаетесь войти, не существует. Вы можете создать аккаунт на <a href=\"https://auth.zelthoriaismp.cloud/auth/register\">Zelthoriaismp.cloud</a>"
+gameNotPurchasedDesc = "Аккаунт, с которым вы пытаетесь войти, не существует. Вы можете создать аккаунт на <a href=\"https://hm380678.webhm.pro/</a>"
 unknownErrorTitle = "Неизвестная ошибка входа"
 unknownErrorDesc = "Произошла неизвестная ошибка. Смотрите консоль для подробностей."
 
