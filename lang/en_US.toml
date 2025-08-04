@@ -324,7 +324,7 @@ accountMigratedDesc = "You've attempted to login with a migrated account. Try ag
 invalidCredentialsTitle = "Error During Login:<br>Invalid Credentials"
 invalidCredentialsDesc = "The email/username or password you've entered is incorrect. Please try again."
 invalidUserTitle = "Error During Login:<br>Account not found"
-invalidUserDesc = "The account you are trying to login with does not exist. You may create a account on <a href=\"https://hm380678.webhm.pro/">hm380678.webhm.pro</a>"
+invalidUserDesc = "The account you are trying to login with does not exist. You may create a account on https://hm380678.webhm.pro"
 tooManyAttemptsTitle = "Error During Login:<br>Too Many Attempts"
 tooManyAttemptsDesc = "There have been too many login attempts with this account recently. Please try again later."
 invalidTokenTitle = "Error During Login:<br>Invalid Token"
