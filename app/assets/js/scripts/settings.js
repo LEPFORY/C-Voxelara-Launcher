@@ -1073,6 +1073,7 @@ let langCodes = {
     "be_BY": "Беларускі",
     "pl_PL": "Polski",
     "de_DE": "Deutsch",
+    "kz_KZ": "Қазақша",
 } 
 
 async function resolveLanguageForUI() {

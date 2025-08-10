@@ -211,15 +211,15 @@ checkConsoleForDetails = "Пожалуйста, откройте консоль 
 
 
 [js.landing.news]
-checking = "Checking for News"
+checking = "Ищем новости..."
 
 [js.landing.discord]
 loading = "Загружаем игру.."
-joining = "Joining the realms of zelthoriai"
-joined = "Exploring the island of zelthoriai!"
+joining = "Присоединяемся к Voxelara!"
+joined = "Исследуем Voxelara!"
 
 [js.overlay]
-dismiss = "Dismiss"
+dismiss = "Отклонить"
 
 [js.settings.fileSelectors]
 executables = "Исполняемые файлы"

@@ -1,0 +1,350 @@
+[ejs.landing]
+updateAvailableTooltip = "Жаңарту қолжетімді"
+usernamePlaceholder = "Лақап ат"
+usernameEditButton = "Edit"
+settingsTooltip = "Баптаулар"
+serverStatus = "СЕРВЕР"
+serverStatusPlaceholder = "ОФФЛАЙН"
+mojangStatus = "Voxelara"
+mojangStatusTooltipTitle = "Қызметтер"
+mojangStatusNETitle = "Non&nbsp;Essential"
+newsButton = "Жаңалықтар"
+launchButton = "Ойнау"
+launchButtonPlaceholder = "• Сервер таңдалмаған"
+launchDetails = "Күте тұрыңыз..."
+newsNavigationStatus = "{currentPage} of {totalPages}"
+newsErrorLoadSpan = "Жаңалықтар ізделуде..."
+newsErrorFailedSpan = "Жаңалықтарды жүктеу сәтсіз аяқталды"
+newsErrorRetryButton = "Қайталап көру"
+newsErrorNoneSpan = "Жаңалықтар жоқ"
+
+[ejs.login]
+loginCancelText = "Бас тарту"
+loginSubheader = "Офлайн кіру"
+loginEmailError = "* Invalid Value"
+loginEmailPlaceholder = "EMAIL НЕМЕСЕ ЛАҚАП АТ"
+loginPasswordError = "* Міндетті"
+loginPasswordPlaceholder = "ҚҰПИЯСӨЗ"
+loginForgotPasswordLink = "https://hm380678.webhm.pro/"
+loginForgotPasswordText = "құпиясөзді ұмыттыңыз ба?"
+loginRememberMeText = "remember me?"
+loginButtonText = "КІРУ"
+loginNeedAccountLink = "https://hm380678.webhm.pro/"
+loginNeedAccountText = "Аккаунт қажет пе?"
+loginPasswordDisclaimer1 = "Сіздің логиніңіз Voxelara серверлерінде сақталмайды."
+loginPasswordDisclaimer2 = "Қарақшылық авторизация сіздің деректеріңіз үшін 100% қауіпсіз."
+
+[ejs.loginOptions]
+loginOptionsTitle = "Авторизация түрлері"
+loginWithMicrosoft = "Microsoft авторизациясы"
+loginWithMojang = "Офлайн авторизациясы"
+cancelButton = "Бас тарту"
+
+[ejs.overlay]
+serverSelectHeader = "Қол жетімді серверлер"
+serverSelectConfirm = "Таңдау"
+serverSelectCancel = "Бас тарту"
+accountSelectHeader = "Аккаунтты таңдаңыз"
+accountSelectConfirm = "Таңдау"
+accountSelectCancel = "Бас тарту"
+
+[ejs.settings]
+navHeaderText = "Баптаулар"
+navAccount = "Аккаунт"
+navMinecraft = "Minecraft"
+navMods = "Модтар"
+navJava = "Java"
+navLauncher = "Лаунчер"
+navAbout = "Лаунчер туралы"
+navUpdates = "Жаңартулар"
+navDone = "Дайын"
+syncGameLang = "Ойын тілін лаунчер тілімен синхрондау"
+tabAccountHeaderText = "Аккаунт баптаулары"
+tabAccountHeaderDesc = "Аккаунттарды қосып, басқару."
+microsoftAccount = "Microsoft"
+addMicrosoftAccount = "+ Microsoft аккаунтын қосу"
+mojangAccount = "Офлайн кіру"
+addMojangAccount = "+ оффлайн аккаунт қосу"
+minecraftTabHeaderText = "Minecraft баптаулары"
+minecraftTabHeaderDesc = "Ойынды іске қосуға байланысты опциялар."
+gameResolutionTitle = "Ойынның рұқсаты"
+launchFullscreenTitle = "Толық экранда іске қосу"
+autoConnectTitle = "Іске қосқанда серверге автоматты түрде қосылу"
+launchDetachedTitle = "Ойынды лаунчерден бөлек іске қосу"
+launchDetachedDesc = "Егер ойын бөлек іске қосылмаса, лаунчерді жабу ойынды да жабады."
+tabModsHeaderText = "Мод баптаулары"
+tabModsHeaderDesc = "Модтарды қосу немесе өшіру."
+switchServerButton = "Ауыстыру"
+requiredMods = "Міндетті модтар"
+optionalMods = "Қосымша модтар"
+dropinMods = "Орнатылған модтар"
+addMods = "Модтарды қосу"
+dropinRefreshNote = "(Жаңарту үшін F5 пернесін басыңыз)"
+shaderpacks = "Шейдер пактар"
+shaderpackDesc = "Шейдерлерді қосу немесе өшіру. Назар аударыңыз: олар тек қуатты компьютерлерде дұрыс жұмыс істейді. Өз пактарыңызды осында қосуға болады."
+selectShaderpack = "Шейдер пакты таңдау"
+tabJavaHeaderText = "Java баптаулары"
+tabJavaHeaderDesc = "Java конфигурациясын басқару (тәжірибелі қолданушылар үшін)."
+memoryTitle = "Жад"
+maxRAM = "Максималды RAM"
+minRAM = "Минималды RAM"
+memoryDesc = "Ұсынылатын минимум RAM — 5 ГБ. Бірдей мәндер лагтарды азайтуы мүмкін."
+memoryTotalTitle = "Барлығы"
+memoryAvailableTitle = "Қол жетімді"
+javaExecutableTitle = "Java орындалатын файлы"
+javaExecSelDialogTitle = "Java файлын таңдаңыз"
+javaExecSelButtonText = "Файлды таңдау"
+javaExecDesc = "Java файлы ойынды іске қоспас бұрын тексеріледі."
+javaPathDesc = "Жол <strong>{pathSuffix}</strong> деп аяқталуы керек."
+jvmOptsTitle = "Қосымша JVM параметрлері"
+jvmOptsDesc = "JVM орындалу кезінде берілетін опциялар. <em>-Xms</em> және <em>-Xmx</em> көрсетудің қажеті жоқ."
+launcherTabHeaderText = "Лаунчер баптаулары"
+launcherTabHeaderDesc = "Лаунчерге қатысты параметрлер."
+allowPrereleaseTitle = "Алдын ала шығарылымдарды рұқсат ету"
+allowPrereleaseDesc = "Алдын ала шығарылымдар толық тексерілмеген жаңа мүмкіндіктерді қамтиды.<br>Егер сіз алдын ала нұсқасын қолдансаңыз, бұл әрқашан қосылады."
+dataDirectoryTitle = "Деректер каталогы"
+selectDataDirectory = "Деректер каталогын таңдау"
+chooseFolder = "Қапшықты таңдау"
+dataDirectoryDesc = "Барлық ойын файлдары және жергілікті Java орнатулары осы каталогта сақталады.<br>Скриншоттар мен әлемдер осы сервер конфигурациясына арналған қалтада сақталады."
+aboutTabHeaderText = "Бағдарлама туралы"
+aboutTabHeaderDesc = "Ағымдағы нұсқа туралы ақпарат және ескертулерді көру."
+aboutTitle = "{appName}"
+stableRelease = "Тұрақты шығарылым"
+versionText = "Нұсқасы "
+sourceGithub = "Бастапқы код (GitHub)"
+support = "Қолдау"
+devToolsConsole = "Әзірлеуші консолі"
+releaseNotes = "Өзгерістер тізімі"
+changelog = "Нұсқалар тарихы"
+noReleaseNotes = "Ескертулер жоқ"
+viewReleaseNotes = "Өзгерістерді GitHub-та қарау"
+launcherUpdatesHeaderText = "Лаунчер жаңартулары"
+launcherUpdatesHeaderDesc = "Лаунчер жаңартуларын жүктеу, орнату және қарау."
+checkForUpdates = "Жаңартуларды тексеру"
+whatsNew = "Не жаңалық"
+updateReleaseNotes = "Жаңарту сипаттамасы"
+
+[ejs.waiting]
+waitingText = "Microsoft күтіп тұр..."
+
+[ejs.welcome]
+continueButton = "ЖАЛҒАСТЫРУ"
+
+
+[js.discord]
+waiting = "Клиент күтілуде.."
+state = "Сервер: {shortId}"
+
+[js.index]
+microsoftLoginTitle = "Microsoft авторизациясы"
+microsoftLogoutTitle = "Microsoft аккаунтынан шығу"
+
+[js.login]
+login = "КІРУ"
+loggingIn = "АВТОРИЗАЦИЯ..."
+success = "СӘТТІ"
+tryAgain = "Қайтадан көру"
+
+[js.login.error]
+invalidValue = "* Жарамсыз мән"
+requiredValue = "* Міндетті өріс"
+
+[js.login.error.unknown]
+title = "Белгісіз кіру қатесі"
+desc = "Белгісіз қате орын алды. Қосымша ақпарат үшін консольді қараңыз."
+
+[js.landing.launch]
+pleaseWait = "Күте тұрыңыз..."
+failureTitle = "Іске қосу қатесі"
+failureText = "Қосымша ақпарат үшін консольді ашыңыз (CTRL + Shift + i)."
+okay = "ОК"
+
+[js.landing.selectedAccount]
+noAccountSelected = "Аккаунт таңдалмаған"
+
+[js.landing.selectedServer]
+noSelection = "Сервер таңдалмаған"
+loading = "Жүктелуде..."
+
+
+[js.landing.serverStatus]
+server = "СЕРВЕР"
+offline = "ОФФЛАЙН"
+players = "ОЙЫНШЫЛАР"
+
+[js.landing.systemScan]
+checking = "Жүйе ақпараты тексерілуде..."
+noCompatibleJava = "Сәйкес Java орнатуы табылған жоқ"
+installJavaMessage = "Minecraft іске қосу үшін 64-бит Java {major} қажет. Автоматты түрде орнату керек пе?"
+installJava = "Java орнату"
+installJavaManually = "Қолмен орнату"
+javaDownloadPrepare = "Java жүктеуге дайындық..."
+javaDownloadFailureTitle = "Java жүктеу қатесі"
+javaDownloadFailureText = "Қосымша ақпарат алу үшін консольді ашыңыз (CTRL + Shift + i)."
+javaRequired = "Ойынды іске қосу үшін<br>Java қажет"
+javaRequiredMessage = 'Сәйкес 64-бит Java {major} орнатуы қажет.<br><br>Қолмен орнату үшін <a href="https://github.com/dscalzi/HeliosLauncher/wiki/Java-Management#manually-installing-a-valid-version-of-java">осы нұсқаулықты</a> қолданыңыз.'
+javaRequiredDismiss = "Түсіндім"
+javaRequiredCancel = "Артқа"
+
+[js.landing.downloadJava]
+findJdkFailure = "OpenJDK дистрибутиві табылмады."
+javaDownloadCorruptedError = "Жүктелген JDK файлында қате бар немесе ол бүлінген."
+extractingJava = "Java шығару..."
+javaInstalled = "Java орнатылды!"
+
+[js.landing.dlAsync]
+loadingServerInfo = "Сервер ақпараты жүктелуде..."
+fatalError = "Қатерлі қате"
+unableToLoadDistributionIndex = "Дистрибуция индексін жүктеу сәтсіз. Консольді ашыңыз (CTRL + Shift + i) толық ақпарат үшін."
+pleaseWait = "Күте тұрыңыз..."
+errorDuringLaunchTitle = "Іске қосу кезінде қате"
+seeConsoleForDetails = "Қосымша ақпарат алу үшін консольді ашыңыз (CTRL + Shift + i)."
+validatingFileIntegrity = "Файлдардың тұтастығы тексерілуде..."
+errorDuringFileVerificationTitle = "Файлдарды тексеру кезінде қате"
+downloadingFiles = "Файлдар жүктелуде..."
+errorDuringFileDownloadTitle = "Файлдарды жүктеу кезінде қате"
+preparingToLaunch = "Іске қосуға дайындық..."
+launchingGame = "Ойын іске қосылуда..."
+launchWrapperNotDownloaded = "LaunchWrapper негізгі файлы жүктелмеді. Ойын іске қосылмайды.<br><br>Мәселені шешу үшін антивирусты уақытша өшіріп, ойынды қайта іске қосыңыз.<br><br>Мүмкін болса, <a href=\"https://github.com/dscalzi/HeliosLauncher/issues\">issue ашыңыз</a> және антивирусыңызды көрсетіңіз."
+doneEnjoyServer = "Дайын. Ойынды тамашалаңыз!"
+checkConsoleForDetails = "Қосымша ақпарат үшін консольді ашыңыз (CTRL + Shift + i)."
+
+
+[js.landing.news]
+checking = "Жаңалықтар тексерілуде"
+
+[js.landing.discord]
+loading = "Ойын жүктелуде..."
+joining = "Voxelara серверіне қосылуда!"
+joined = "Voxelara зерттелуде!"
+
+[js.overlay]
+dismiss = "Dismiss"
+
+[js.settings.fileSelectors]
+executables = "Орындалатын файлдар"
+allFiles = "Барлық файлдар"
+
+[js.settings.mstfLogin]
+errorTitle = "Қате орын алды."
+errorMessage = "Microsoft авторизациясы сәтсіз аяқталды, қайта көріңіз."
+okButton = "OK"
+
+[js.settings.mstfLogout]
+errorTitle = "Қате орын алды"
+errorMessage = "Microsoft аккаунтынан шығу сәтсіз. Қайта көріңіз."
+okButton = "OK"
+
+[js.settings.authAccountSelect]
+selectButton = "Аккаунт таңдау"
+selectedButton = "Таңдалған аккаунт &#10004;"
+
+[js.settings.authAccountLogout]
+lastAccountWarningTitle = "Назар аударыңыз<br>Бұл сіздің соңғы аккаунтыңыз."
+lastAccountWarningMessage = "Лаунчерді пайдалану үшін кем дегенде бір аккаунтқа кіру қажет. Шығып кеткеннен кейін қайта кіру керек.<br><br>Шығуды қалайсыз ба?"
+confirmButton = "Мен сенімдімін"
+cancelButton = "Бас тарту"
+
+[js.settings.authAccountPopulate]
+username = "Пайдаланушы аты"
+uuid = "UUID"
+selectAccount = "Аккаунт таңдау"
+selectedAccount = "Таңдалған аккаунт ✓"
+logout = "Шығу"
+
+[js.settings.dropinMods]
+removeButton = "Жою"
+deleteFailedTitle = "Модты жою мүмкін болмады<br>{fullName}"
+deleteFailedMessage = "Файл пайдаланылмағанына көз жеткізіп, қайталап көріңіз."
+failedToggleTitle = "Бір немесе бірнеше модты ауыстыру мүмкін болмады"
+okButton = "OK"
+
+[js.settings.serverListing]
+mainServer = "Негізгі сервер"
+
+[js.settings.java]
+selectedJava = "Таңдалған: Java {version} ({vendor})"
+invalidSelection = "Қате таңдау"
+requiresJava = "Java {major} x64 қажет."
+availableOptions = "Қол жетімді Java {major} нұсқалары (HotSpot VM)"
+
+[js.settings.about]
+preReleaseTitle = "Алдын ала нұсқа"
+stableReleaseTitle = "Тұрақты нұсқа"
+releaseNotesFailed = "Өзгерістер тізімін жүктеу мүмкін болмады."
+
+[js.settings.updates]
+newReleaseTitle = "Жаңа нұсқа қолжетімді"
+newPreReleaseTitle = "Жаңа алдын ала нұсқа қолжетімді"
+downloadingButton = "Жүктелуде..."
+downloadButton = 'GitHub-тан жүктеу<span style="font-size: 10px;color: gray;text-shadow: none !important;">Лаунчерді жабыңыз және жаңарту үшін dmg іске қосыңыз.</span>'
+latestVersionTitle = "Сіз соңғы нұсқаны пайдаланудасыз"
+checkForUpdatesButton = "Жаңартуларды тексеру"
+checkingForUpdatesButton = "Жаңартулар тексерілуде..."
+
+[js.settings.msftLogin]
+errorTitle = "Microsoft кіру қатесі"
+errorMessage = "Microsoft аккаунтыңызды авторизациялау сәтсіз аяқталды. Қайта көріңіз."
+okButton = "OK"
+
+[js.uibinder.startup]
+fatalErrorTitle = "Қатерлі қате: дистрибуция индексі жүктелмеді"
+fatalErrorMessage = "Индексті серверден жүктеу мүмкін емес. Жергілікті нұсқалар табылмады.<br><br>Бұл файл сервер туралы мәліметтерді қамтиды және лаунчер онсыз жұмыс істей алмайды. Интернетке қосылып, қолданбаны қайта іске қосыңыз."
+closeButton = "Жабу"
+
+[js.uibinder.validateAccount]
+failedMessageTitle = "Кіруді жаңарту мүмкін болмады"
+failedMessage = "<strong>{account}</strong> үшін кіруді жаңарту сәтсіз. Басқа аккаунт таңдаңыз немесе қайта кіріңіз."
+failedMessageSelectAnotherAccount = "<strong>{account}</strong> үшін қайта кіріңіз."
+loginButton = "Кіру"
+selectAnotherAccountButton = "Басқа аккаунт таңдау"
+
+[js.uicore.autoUpdate]
+checkingForUpdateButton = "Жаңартулар тексерілуде..."
+installNowButton = "Қазір орнату"
+checkForUpdatesButton = "Жаңартуларды тексеру"
+
+[js.auth.microsoft.error]
+noProfileTitle = "Кіру қатесі:<br>Профиль бапталмаған"
+noProfileDesc = "Сіздің Microsoft аккаунтыңызда әлі Minecraft профилі жоқ. Егер сіз жақында ойынды сатып алсаңыз немесе Xbox Game Pass арқылы іске қосқан болсаңыз, <a href=\"https://minecraft.net/\">Minecraft.net</a> сайтында профиль баптаңыз.<br><br>Егер сізде ойын болмаса, оны <a href=\"https://minecraft.net/\">Minecraft.net</a> сайтынан сатып ала аласыз."
+noXboxAccountTitle = "Кіру қатесі:<br>Xbox аккаунты жоқ"
+noXboxAccountDesc = "Сіздің Microsoft аккаунтыңызға байланыстырылған Xbox аккаунты жоқ."
+xblBannedTitle = "Кіру қатесі:<br>Xbox Live қолжетімсіз"
+xblBannedDesc = "Сіздің Microsoft аккаунтыңыз Xbox Live қызметі қолжетімсіз немесе бұғатталған өңірге байланған."
+under18Title = "Кіру қатесі:<br>Ата-ананың рұқсаты қажет"
+under18Desc = "18 жасқа толмаған пайдаланушылардың аккаунты ересек қолданушының «Отбасысына» қосылуы қажет."
+unknownTitle = "Белгісіз кіру қатесі"
+unknownDesc = "Белгісіз қате орын алды. Қосымша ақпарат алу үшін консольді қараңыз."
+
+[js.auth.mojang.error]
+methodNotAllowedTitle = "Ішкі қате:<br>Әдіске рұқсат жоқ"
+methodNotAllowedDesc = "Бұл әдіске рұқсат жоқ. Бұл қате туралы хабарлаңыз."
+notFoundTitle = "Ішкі қате:<br>Табылмады"
+notFoundDesc = "Авторизация нүктесі табылмады. Бұл туралы хабарлаңыз."
+accountMigratedTitle = "Кіру қатесі:<br>Аккаунт миграцияланған"
+accountMigratedDesc = "Сіз миграцияланған аккаунтпен кіруге тырысудасыз. Пайдаланушы аты ретінде email пайдаланып көріңіз."
+invalidCredentialsTitle = "Кіру қатесі:<br>Қате деректер"
+invalidCredentialsDesc = "Email/логин немесе құпиясөз қате енгізілді. Қайта көріңіз."
+invalidUserTitle = "Кіру қатесі:<br>Аккаунт табылмады"
+invalidUserDesc = "Сіз кіруге тырысқан аккаунт жоқ. Сіз жаңа аккаунтты мына сілтеме арқылы жасай аласыз: https://hm380678.webhm.pro"
+tooManyAttemptsTitle = "Кіру қатесі:<br>Тым көп әрекет"
+tooManyAttemptsDesc = "Бұл аккаунт үшін тым көп кіру әрекеті жасалды. Кейінірек қайталап көріңіз."
+invalidTokenTitle = "Кіру қатесі:<br>Қате токен"
+invalidTokenDesc = "Берілген кіру токені жарамсыз."
+tokenHasProfileTitle = "Кіру қатесі:<br>Токенде профиль бар"
+tokenHasProfileDesc = "Кіру токені бұрыннан профильге байланысты. Профиль таңдау әлі іске асырылмаған."
+credentialsMissingTitle = "Кіру қатесі:<br>Деректер жоқ"
+credentialsMissingDesc = "Пайдаланушы аты/құпиясөз жіберілмеген немесе құпиясөз тым қысқа (3 таңбадан кем)."
+invalidSaltVersionTitle = "Кіру қатесі:<br>Salt нұсқасы дұрыс емес"
+invalidSaltVersionDesc = "Salt нұсқасы жарамсыз."
+unsupportedMediaTypeTitle = "Ішкі қате:<br>Қолдау көрсетілмейтін түр"
+unsupportedMediaTypeDesc = "Қолдау көрсетілмейтін мәлімет түрі. Бұл қате туралы хабарлаңыз."
+accountGoneTitle = "Кіру қатесі:<br>Аккаунт миграцияланған"
+accountGoneDesc = "Аккаунт Microsoft-қа миграцияланған. Microsoft арқылы кіріңіз."
+unreachableTitle = "Кіру қатесі:<br>Сервер қолжетімсіз"
+unreachableDesc = "Авторизация серверімен байланысу мүмкін болмады. Интернет қосылымын тексеріңіз."
+gameNotPurchasedTitle = "Кіру қатесі:<br>Ойын сатып алынбаған"
+gameNotPurchasedDesc = "Сіз кіруге тырысқан аккаунт жоқ. Сіз аккаунтты мына сілтеме арқылы жасай аласыз: <a href=\"https://hm380678.webhm.pro/</a>"
+unknownErrorTitle = "Белгісіз кіру қатесі"
+unknownErrorDesc = "Белгісіз қате орын алды. Қосымша ақпарат алу үшін консольді қараңыз."
+
