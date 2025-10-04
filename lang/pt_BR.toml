@@ -324,7 +324,7 @@ accountMigratedDesc = "Você tentou fazer login com uma conta migrada. Tente nov
 invalidCredentialsTitle = "Erro Durante o Login:<br>Credenciais Inválidas"
 invalidCredentialsDesc = "O email/nome de usuário ou senha que você digitou está incorreto. Por favor, tente novamente."
 invalidUserTitle = "Erro Durante o Login:<br>Conta não Encontrada"
-invalidUserDesc = "A conta que você está tentando fazer login não existe. Você pode criar uma conta em <a href=\"https://hm380678.webhm.pro/">hm380678.webhm.pro</a>."
+invalidUserDesc = "A conta que você está tentando fazer login não existe. Você pode criar uma conta em hm380678.webhm.pro</a>."
 tooManyAttemptsTitle = "Erro Durante o Login:<br>Muitas Tentativas"
 tooManyAttemptsDesc = "Houve muitas tentativas de login com esta conta recentemente. Por favor, tente novamente mais tarde."
 invalidTokenTitle = "Erro Durante o Login:<br>Token Inválido"

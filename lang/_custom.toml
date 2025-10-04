@@ -15,7 +15,7 @@ sourceGithubLink = "https://github.com/dscalzi/HeliosLauncher"
 supportLink = "https://github.com/Shisuiicaro/HastaStudiosLauncher/issues"
 selectLanguage = "Select a Language"
 changeLanguageTitle = "Change the launcher language"
-changeLanguageDesc = "You can change the language in the list below. This text will not change if you change the language so you can find your wayback here to change it back. Localization contributors: LEPFORY (Russian), jexber999 (Kazakh), soni4ek (Ukranian)"
+changeLanguageDesc = "You can change the language in the list below. This text will not change if you change the language so you can find your wayback here to change it back. Localization contributors: LEPFORY (Russian), jexber999 (Kazakh)."
 
 [ejs.welcome]
 welcomeHeader = "WELCOME TO VOXELARA"
