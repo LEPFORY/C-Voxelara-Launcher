@@ -2,7 +2,7 @@ appId: 'VoxelaraLauncher'
 productName: 'VoxelaraLauncher'
 artifactName: '${productName}-setup-${version}.${ext}'
 
-copyright: 'Copyright © 2024-2025 Lepfory'
+copyright: 'Copyright © 2024-2026 Lepfory'
 
 asar: true
 compression: 'maximum'

@@ -1,0 +1,346 @@
+[ejs.landing]
+updateAvailableTooltip = "Доступне оновлення"
+usernamePlaceholder = "Нікнейм"
+usernameEditButton = "Edit"
+settingsTooltip = "Налаштування"
+serverStatus = "СЕРВЕР"
+serverStatusPlaceholder = "ОФЛАЙН"
+mojangStatus = "Voxelara"
+mojangStatusTooltipTitle = "Сервіси"
+mojangStatusNETitle = "Non&nbsp;Essential"
+newsButton = "Новини"
+launchButton = "Грати"
+launchButtonPlaceholder = "&#8226; Сервер не обрано"
+launchDetails = "Будь ласка, зачекайте.."
+newsNavigationStatus = "{currentPage} з {totalPages}"
+newsErrorLoadSpan = "Шукаємо новини.."
+newsErrorFailedSpan = "Не вдалося завантажити новини"
+newsErrorRetryButton = "Спробувати ще раз"
+newsErrorNoneSpan = "Новин немає"
+ 
+[ejs.login]
+loginCancelText = "Скасувати"
+loginSubheader = "Офлайн вхід"
+loginEmailError = "* Невірне значення"
+loginEmailPlaceholder = "НІКНЕЙМ"
+loginPasswordError = "* Обов'язково"
+loginPasswordPlaceholder = "ПАРОЛЬ"
+loginForgotPasswordLink = "https://hm380678.webhm.pro/"
+loginForgotPasswordText = "забули пароль?"
+loginRememberMeText = "запам'ятати мене?"
+loginButtonText = "УВІЙТИ"
+loginNeedAccountLink = "https://hm380678.webhm.pro/"
+loginNeedAccountText = "Потрібен акаунт?"
+loginPasswordDisclaimer1 = "Ваш логін не зберігається на серверах Voxelara."
+loginPasswordDisclaimer2 = "Зламана авторизація на 100% безпечна для ваших даних."
+ 
+[ejs.loginOptions]
+loginOptionsTitle = "Види авторизації"
+loginWithMicrosoft = "Microsoft авторизація"
+loginWithMojang = "Офлайн авторизація"
+cancelButton = "Скасувати"
+ 
+[ejs.overlay]
+serverSelectHeader = "Доступні сервери"
+serverSelectConfirm = "Обрати"
+serverSelectCancel = "Скасувати"
+accountSelectHeader = "Обрати акаунт"
+accountSelectConfirm = "Обрати"
+accountSelectCancel = "Скасувати"
+ 
+[ejs.settings]
+navHeaderText = "Налаштування"
+navAccount = "Акаунт"
+navMinecraft = "Minecraft"
+navMods = "Моди"
+navJava = "Java"
+navLauncher = "Лаунчер"
+navAbout = "Про лаунчер"
+navUpdates = "Оновлення"
+navDone = "Готово"
+syncGameLang = "Синхронізувати мову гри з мовою лаунчера"
+tabAccountHeaderText = "Налаштування акаунта"
+tabAccountHeaderDesc = "Додавайте акаунти та керуйте ними."
+microsoftAccount = "Microsoft"
+addMicrosoftAccount = "+ Додати акаунт Microsoft"
+mojangAccount = "Офлайн вхід"
+addMojangAccount = "+ Додати офлайн акаунт"
+minecraftTabHeaderText = "Налаштування Minecraft"
+minecraftTabHeaderDesc = "Параметри, пов'язані із запуском гри."
+gameResolutionTitle = "Роздільна здатність гри"
+launchFullscreenTitle = "Запускати у повноекранному режимі"
+autoConnectTitle = "Автоматично підключатися до сервера при запуску"
+launchDetachedTitle = "Запускати гру окремо від лаунчера"
+launchDetachedDesc = "Якщо гру не запущено окремо, закриття лаунчера також закриє гру."
+tabModsHeaderText = "Налаштування модів"
+tabModsHeaderDesc = "Увімкнення та вимкнення модів."
+switchServerButton = "Змінити"
+requiredMods = "Обов'язкові моди"
+optionalMods = "Необов'язкові моди"
+dropinMods = "Вбудовані моди"
+addMods = "Додати моди"
+dropinRefreshNote = "(Натисніть F5 для оновлення)"
+shaderpacks = "Шейдерпаки"
+shaderpackDesc = "Увімкнення або вимкнення шейдерів. Зверніть увагу: вони працюють плавно лише на потужних комп'ютерах. Ви можете додати власні паки тут."
+selectShaderpack = "Обрати шейдерпак"
+tabJavaHeaderText = "Налаштування Java"
+tabJavaHeaderDesc = "Керування конфігурацією Java (для досвідчених користувачів)."
+memoryTitle = "Пам'ять"
+maxRAM = "Максимум RAM"
+minRAM = "Мінімум RAM"
+memoryDesc = "Рекомендований мінімум RAM — 5 ГБ. Встановлення однакових значень може зменшити лаги."
+memoryTotalTitle = "Всього"
+memoryAvailableTitle = "Доступно"
+javaExecutableTitle = "Виконуваний файл Java"
+javaExecSelDialogTitle = "Оберіть файл Java"
+javaExecSelButtonText = "Обрати файл"
+javaExecDesc = "Виконуваний файл Java перевіряється перед запуском гри."
+javaPathDesc = "Шлях має закінчуватися на <strong>{pathSuffix}</strong>."
+jvmOptsTitle = "Додаткові параметри JVM"
+jvmOptsDesc = "Параметри, що передаються JVM під час виконання. <em>-Xms</em> та <em>-Xmx</em> вказувати не потрібно."
+launcherTabHeaderText = "Налаштування лаунчера"
+launcherTabHeaderDesc = "Параметри, пов'язані із самим лаунчером."
+allowPrereleaseTitle = "Дозволити попередні оновлення"
+allowPrereleaseDesc = "Передрелізи містять нові функції, які можуть бути не повністю протестовані.<br>Завжди буде увімкнено, якщо ви використовуєте передрелізну версію."
+dataDirectoryTitle = "Каталог даних"
+selectDataDirectory = "Обрати каталог даних"
+chooseFolder = "Обрати папку"
+dataDirectoryDesc = "Усі ігрові файли та локальні установки Java зберігатимуться в цьому каталозі.<br>Скріншоти та збереження світів зберігаються у папці екземпляра для відповідної конфігурації сервера."
+aboutTabHeaderText = "Про програму"
+aboutTabHeaderDesc = "Перегляд інформації та нотаток про поточну версію."
+aboutTitle = "{appName}"
+stableRelease = "Стабільний реліз"
+versionText = "Версія "
+sourceGithub = "Вихідний код (GitHub)"
+support = "Підтримка"
+devToolsConsole = "Консоль розробника"
+releaseNotes = "Список змін"
+changelog = "Історія версій"
+noReleaseNotes = "Немає нотаток"
+viewReleaseNotes = "Переглянути зміни на GitHub"
+launcherUpdatesHeaderText = "Оновлення лаунчера"
+launcherUpdatesHeaderDesc = "Завантаження, встановлення та перегляд оновлень лаунчера."
+checkForUpdates = "Перевірити оновлення"
+whatsNew = "Що нового"
+updateReleaseNotes = "Опис оновлень"
+ 
+[ejs.waiting]
+waitingText = "Очікування Microsoft.."
+ 
+[ejs.welcome]
+continueButton = "ПРОДОВЖИТИ"
+ 
+ 
+[js.discord]
+waiting = "В очікуванні клієнта.."
+state = "Сервер: {shortId}"
+ 
+[js.index]
+microsoftLoginTitle = "Microsoft авторизація"
+microsoftLogoutTitle = "Microsoft вихід з акаунта"
+ 
+[js.login]
+login = "УВІЙТИ"
+loggingIn = "АВТОРИЗАЦІЯ..."
+success = "УСПІШНО"
+tryAgain = "Спробувати знову"
+ 
+[js.login.error]
+invalidValue = "* Невірне значення"
+requiredValue = "* Обов'язкове поле"
+ 
+[js.login.error.unknown]
+title = "Невідома помилка входу"
+desc = "Сталася невідома помилка. Дивіться консоль для подробиць."
+ 
+[js.landing.launch]
+pleaseWait = "Будь ласка, зачекайте..."
+failureTitle = "Помилка при запуску"
+failureText = "Дивіться консоль (CTRL + Shift + i) для подробиць."
+okay = "ОК"
+ 
+[js.landing.selectedAccount]
+noAccountSelected = "Акаунт не обрано"
+ 
+[js.landing.selectedServer]
+noSelection = "Сервер не обрано"
+loading = "Завантаження..."
+ 
+ 
+[js.landing.serverStatus]
+server = "СЕРВЕР"
+offline = "ОФЛАЙН"
+players = "ГРАВЦІВ"
+ 
+installJavaMessage = "Для запуску Minecraft потрібна 64-бітна версія Java {major}. Встановити автоматично?"
+installJava = "Встановити Java"
+installJavaManually = "Встановити вручну"
+javaDownloadPrepare = "Підготовка завантаження Java..."
+javaDownloadFailureTitle = "Помилка завантаження Java"
+javaDownloadFailureText = "Дивіться консоль (CTRL + Shift + i) для подробиць."
+javaRequired = "Потрібна Java<br>для запуску"
+javaRequiredMessage = 'Для запуску необхідна коректна 64-бітна установка Java {major}.<br><br>Будь ласка, зверніться до <a href="https://github.com/dscalzi/HeliosLauncher/wiki/Java-Management#manually-installing-a-valid-version-of-java">посібника з Java</a> для ручного встановлення.'
+javaRequiredDismiss = "Зрозуміло"
+javaRequiredCancel = "Назад"
+ 
+[js.landing.downloadJava]
+findJdkFailure = "Не вдалося знайти дистрибутив OpenJDK."
+javaDownloadCorruptedError = "Завантажений JDK має невірну хеш-суму, можливо файл пошкоджений."
+extractingJava = "Розпакування Java..."
+javaInstalled = "Java встановлена!"
+ 
+[js.landing.dlAsync]
+loadingServerInfo = "Завантаження інформації про сервер..."
+fatalError = "Критична помилка"
+unableToLoadDistributionIndex = "Не вдалося завантажити копію індексу дистрибуції. Дивіться консоль (CTRL + Shift + i) для подробиць."
+pleaseWait = "Будь ласка, зачекайте..."
+errorDuringLaunchTitle = "Помилка при запуску"
+seeConsoleForDetails = "Дивіться консоль (CTRL + Shift + i) для подробиць."
+validatingFileIntegrity = "Перевірка цілісності файлів..."
+errorDuringFileVerificationTitle = "Помилка при перевірці файлів"
+downloadingFiles = "Завантаження файлів..."
+errorDuringFileDownloadTitle = "Помилка при завантаженні файлів"
+preparingToLaunch = "Підготовка до запуску..."
+launchingGame = "Запуск гри..."
+launchWrapperNotDownloaded = "Основний файл LaunchWrapper не був завантажений належним чином. Через це гра не може бути запущена.<br><br>Для вирішення проблеми тимчасово вимкніть антивірус і запустіть гру знову.<br><br>Якщо є можливість, <a href=\"https://github.com/dscalzi/HeliosLauncher/issues\">створіть issue</a> та вкажіть антивірус, що використовується. Ми постараємось вирішити цю проблему."
+doneEnjoyServer = "Готово. Завантажуємо гру, зачекайте!"
+checkConsoleForDetails = "Будь ласка, відкрийте консоль (CTRL + Shift + i) для подробиць."
+ 
+ 
+[js.landing.news]
+checking = "Шукаємо новини"
+ 
+[js.landing.discord]
+loading = "Завантажуємо гру.."
+joining = "Приєднуємось до Voxelara!"
+joined = "Досліджуємо Voxelara!"
+ 
+[js.overlay]
+dismiss = "Відхилити"
+ 
+[js.settings.fileSelectors]
+executables = "Виконувані файли"
+allFiles = "Всі файли"
+ 
+[js.settings.mstfLogin]
+errorTitle = "Щось пішло не так."
+errorMessage = "Microsoft авторизація не вдалася, спробуйте ще раз."
+okButton = "OK"
+ 
+[js.settings.mstfLogout]
+errorTitle = "Щось пішло не так"
+errorMessage = "Не вдалося вийти з облікового запису Microsoft. Спробуйте ще раз."
+okButton = "OK"
+ 
+[js.settings.authAccountSelect]
+selectButton = "Обрати акаунт"
+selectedButton = "Обраний акаунт &#10004;"
+ 
+[js.settings.authAccountLogout]
+lastAccountWarningTitle = "Обережно<br>Це ваш останній акаунт."
+lastAccountWarningMessage = "Щоб використовувати лаунчер, необхідно увійти хоча б в один обліковий запис. Після цього потрібно буде увійти знову.<br><br>Ви впевнені, що хочете вийти з акаунта?"
+confirmButton = "Я впевнений"
+cancelButton = "Скасувати"
+ 
+[js.settings.authAccountPopulate]
+username = "Ім'я користувача"
+uuid = "UUID"
+selectAccount = "Обрати акаунт"
+selectedAccount = "Обраний акаунт ✓"
+logout = "Вийти"
+ 
+[js.settings.dropinMods]
+removeButton = "Видалити"
+deleteFailedTitle = "Не вдалося видалити<br>мод {fullName}"
+deleteFailedMessage = "Переконайтесь, що файл не використовується, і спробуйте знову."
+failedToggleTitle = "Не вдалося перемкнути<br>один або кілька модів"
+okButton = "ОК"
+ 
+[js.settings.serverListing]
+mainServer = "Основний сервер"
+ 
+[js.settings.java]
+selectedJava = "Обрано: Java {version} ({vendor})"
+invalidSelection = "Невірний вибір"
+requiresJava = "Потрібна Java {major} x64."
+availableOptions = "Доступні версії Java {major} (HotSpot VM)"
+ 
+[js.settings.about]
+preReleaseTitle = "Передреліз"
+stableReleaseTitle = "Стабільний реліз"
+releaseNotesFailed = "Не вдалося завантажити список змін."
+ 
+[js.settings.updates]
+newReleaseTitle = "Доступний новий реліз"
+newPreReleaseTitle = "Доступний новий передреліз"
+downloadingButton = "Завантаження..."
+downloadButton = 'Завантажити з GitHub<span style="font-size: 10px;color: gray;text-shadow: none !important;">Закрий лаунчер і запусти dmg для оновлення.</span>'
+latestVersionTitle = "Ви використовуєте останню версію"
+checkForUpdatesButton = "Перевірити оновлення"
+checkingForUpdatesButton = "Перевірка оновлень..."
+ 
+[js.settings.msftLogin]
+errorTitle = "Помилка входу Microsoft"
+errorMessage = "Не вдалося авторизувати ваш обліковий запис Microsoft. Спробуйте знову."
+okButton = "ОК"
+ 
+[js.uibinder.startup]
+fatalErrorTitle = "Критична помилка: не вдалося завантажити індекс дистрибуції"
+fatalErrorMessage = "Не вдалося встановити з'єднання з серверами для завантаження індексу дистрибуції. Локальних копій не знайдено.<br><br>Індекс дистрибуції — важливий файл, що містить інформацію про сервер. Лаунчер не може працювати без нього. Переконайтесь, що ви підключені до інтернету, і перезапустіть програму."
+closeButton = "Закрити"
+ 
+[js.uibinder.validateAccount]
+failedMessageTitle = "Не вдалося оновити вхід"
+failedMessage = "Не вдалося оновити вхід для <strong>{account}</strong>. Оберіть інший акаунт або увійдіть знову."
+failedMessageSelectAnotherAccount = "Не вдалося оновити вхід для <strong>{account}</strong>. Будь ласка, увійдіть знову."
+loginButton = "Увійти"
+selectAnotherAccountButton = "Обрати інший акаунт"
+ 
+[js.uicore.autoUpdate]
+checkingForUpdateButton = "Перевірка оновлень..."
+installNowButton = "Встановити зараз"
+checkForUpdatesButton = "Перевірити оновлення"
+ 
+[js.auth.microsoft.error]
+noProfileTitle = "Помилка входу:<br>Профіль не налаштовано"
+noProfileDesc = "У вашому обліковому записі Microsoft ще немає Minecraft-профілю. Якщо ви нещодавно купили гру або активували її через Xbox Game Pass, налаштуйте профіль на <a href=\"https://minecraft.net/\">Minecraft.net</a>.<br><br>Якщо у вас ще немає гри, ви можете придбати її на <a href=\"https://minecraft.net/\">Minecraft.net</a>."
+noXboxAccountTitle = "Помилка входу:<br>Немає Xbox-акаунта"
+noXboxAccountDesc = "У вашого облікового запису Microsoft немає пов'язаного Xbox-акаунта."
+xblBannedTitle = "Помилка входу:<br>Xbox Live недоступний"
+xblBannedDesc = "Ваш обліковий запис Microsoft прив'язаний до регіону, де Xbox Live недоступний або заблокований."
+under18Title = "Помилка входу:<br>Потрібен дозвіл батьків"
+under18Desc = "Акаунти користувачів молодше 18 років мають бути додані до «Сім'ї» дорослим користувачем."
+unknownTitle = "Невідома помилка входу"
+unknownDesc = "Сталася невідома помилка. Дивіться консоль для подробиць."
+ 
+[js.auth.mojang.error]
+methodNotAllowedTitle = "Внутрішня помилка:<br>Метод не дозволений"
+methodNotAllowedDesc = "Метод не дозволений. Повідомте про цю помилку."
+notFoundTitle = "Внутрішня помилка:<br>Не знайдено"
+notFoundDesc = "Точку авторизації не знайдено. Повідомте про це."
+accountMigratedTitle = "Помилка входу:<br>Акаунт мігровано"
+accountMigratedDesc = "Ви намагаєтесь увійти з мігрованим акаунтом. Спробуйте використати email як ім'я користувача."
+invalidCredentialsTitle = "Помилка входу:<br>Невірні дані"
+invalidCredentialsDesc = "Введений email/логін або пароль невірні. Спробуйте знову."
+invalidUserTitle = "Помилка входу:<br>Акаунт не знайдено"
+invalidUserDesc = "Акаунт, з яким ви намагаєтесь увійти, не існує. Ви можете створити акаунт на https://hm380678.webhm.pro</a>"
+tooManyAttemptsTitle = "Помилка входу:<br>Забагато спроб"
+tooManyAttemptsDesc = "Забагато спроб входу для цього акаунта. Спробуйте пізніше."
+invalidTokenTitle = "Помилка входу:<br>Невірний токен"
+invalidTokenDesc = "Наданий токен доступу недійсний."
+tokenHasProfileTitle = "Помилка входу:<br>Токен вже має профіль"
+tokenHasProfileDesc = "Токен доступу вже прив'язаний до профілю. Вибір профілів ще не реалізовано."
+credentialsMissingTitle = "Помилка входу:<br>Дані відсутні"
+credentialsMissingDesc = "Ім'я користувача/пароль не були надіслані або пароль коротший за 3 символи."
+invalidSaltVersionTitle = "Помилка входу:<br>Невірна версія salt"
+invalidSaltVersionDesc = "Невірна версія salt."
+unsupportedMediaTypeTitle = "Внутрішня помилка:<br>Непідтримуваний тип"
+unsupportedMediaTypeDesc = "Непідтримуваний тип даних. Повідомте про цю помилку."
+accountGoneTitle = "Помилка входу:<br>Акаунт мігровано"
+accountGoneDesc = "Акаунт було мігровано на Microsoft. Будь ласка, увійдіть через Microsoft."
+unreachableTitle = "Помилка входу:<br>Сервер недоступний"
+unreachableDesc = "Не вдалося зв'язатися з сервером авторизації. Перевірте з'єднання з інтернетом."
+gameNotPurchasedTitle = "Помилка входу:<br>Гру не куплено"
+gameNotPurchasedDesc = "Акаунт, з яким ви намагаєтесь увійти, не існує. Ви можете створити акаунт на <a href=\"https://hm380678.webhm.pro/</a>"
+unknownErrorTitle = "Невідома помилка входу"
+unknownErrorDesc = "Сталася невідома помилка. Дивіться консоль для подробиць."

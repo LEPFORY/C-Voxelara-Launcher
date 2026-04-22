@@ -817,9 +817,15 @@ class ProcessBuilder {
         const finalLibs = {...mojangLibs, ...servLibs}
         cpArgs = cpArgs.concat(Object.values(finalLibs))
 
-        this._processClassPathList(cpArgs)
-
-        return cpArgs
+// стало:
+this._processClassPathList(cpArgs)
+// Дедупликация по пути
+const seen = new Set()
+return cpArgs.filter(p => {
+    if (seen.has(p)) return false
+    seen.add(p)
+    return true
+})
     }
 
     /**

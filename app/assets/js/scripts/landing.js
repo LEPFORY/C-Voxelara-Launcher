@@ -539,6 +539,17 @@ async function dlAsync(login = true) {
             // Build Minecraft process.
             proc = pb.build()
 
+// Скрыть лаунчер если включено в настройках
+if(ConfigManager.getCloseLauncherOnLaunch()){
+    remote.getCurrentWindow().hide()
+}
+
+proc.on('close', () => {
+    if(ConfigManager.getCloseLauncherOnLaunch()){
+        remote.getCurrentWindow().show()
+    }
+})
+
             // Bind listeners to stdout.
             proc.stdout.on('data', tempListener)
             proc.stderr.on('data', gameErrorListener)
@@ -954,4 +965,11 @@ async function loadNews(){
     })
 
     return await promise
+
+
+
 }
+document.getElementById('creatorsMediaButton').addEventListener('click', () => {
+    switchView(getCurrentView(), VIEWS.creators)
+    setTimeout(() => loadCreators(), 100)
+})

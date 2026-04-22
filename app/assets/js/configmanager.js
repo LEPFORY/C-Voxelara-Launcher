@@ -84,7 +84,8 @@ const DEFAULT_CONFIG = {
             fullscreen: false,
             autoConnect: true,
             launchDetached: true,
-            SyncLanguage: true
+            SyncLanguage: true,
+            closeLauncherOnLaunch: true  // ДОБАВИТЬ
         },
         launcher: {
             resWidth: 1920,
@@ -442,6 +443,12 @@ exports.removeAuthAccount = function(uuid){
     }
     return false
 }
+
+exports.reloadUsername = function() {
+    const selected = exports.getSelectedAccount()
+    return selected ? selected.displayName : null
+}
+
 
 /**
  * Get the currently selected authenticated account.
@@ -893,4 +900,12 @@ exports.getAllLanguages = function(callback) {
         }
     })
     }}
+}
+
+exports.getCloseLauncherOnLaunch = function(def = false){
+    return !def ? config.settings.game.closeLauncherOnLaunch : DEFAULT_CONFIG.settings.game.closeLauncherOnLaunch
+}
+
+exports.setCloseLauncherOnLaunch = function(closeLauncherOnLaunch){
+    config.settings.game.closeLauncherOnLaunch = closeLauncherOnLaunch
 }

@@ -4,15 +4,15 @@
 title = "Voxelara Launcher"
 
 [ejs.landing]
-mediaGitHubURL = "https://hm380678.webhm.pro/"
+mediaGitHubURL = "https://voxelara.webhm.pro/"
 mediaTwitterURL = "https://t.me/Voxelara"
-mediaInstagramURL = "https://www.tiktok.com/@_zsmp_"
+mediaInstagramURL = "https://www.tiktok.com/@voxelaraofficial"
 mediaYouTubeURL = "https://youtube.com/@Voxelara"
 mediaDiscordURL = "https://discord.gg/7e3kZ9XTjZ"
 
 [ejs.settings]
-sourceGithubLink = "https://github.com/dscalzi/HeliosLauncher"
-supportLink = "https://github.com/Shisuiicaro/HastaStudiosLauncher/issues"
+sourceGithubLink = "https://github.com/LEPFORY/C-Voxelara-Launcher"
+supportLink = "https://github.com/LEPFORY/C-Voxelara-Launcher/pulls"
 selectLanguage = "Select a Language"
 changeLanguageTitle = "Change the launcher language"
 changeLanguageDesc = "You can change the language in the list below. This text will not change if you change the language so you can find your wayback here to change it back. Localization contributors: LEPFORY (Russian), jexber999 (Kazakh)."

@@ -3208,7 +3208,7 @@ input:checked+.toggleSwitchSlider:before {
     letter-spacing: 1px;
     text-shadow: 0px 0px 20px black;
     position: absolute;
-    bottom: -25px; /* Ajuste conforme necess�rio */
+    bottom: -25px; /* Ajuste conforme necess�rio */
     left: 50%; /* Posiciona o texto centralizado horizontalmente */
     transform: translateX(-50%); /* Ajuste para centralizar o texto */
     -webkit-user-select: initial;
@@ -3357,6 +3357,184 @@ input:checked+.toggleSwitchSlider:before {
     fill: #1b8dd4;
 }
 
+
+/* ВИКИ */
+
+#wikiMediaContainer {
+    position: relative;
+}
+
+#wikiSVG {
+    fill: white;
+    transition: height 0.25s ease, fill 0.25s ease;
+}
+
+.mediaButton:hover #wikiSVG,
+#wikiURL:hover #wikiSVG,
+#wikiURL:focus #wikiSVG {
+    fill: #ffd54a;
+    height: 20px;
+}
+
+#wikiURL:active #wikiSVG {
+    fill: #dfd32a;
+}
+
+#wikiURL {
+    color: white;
+    text-decoration: none;
+}
+
+#wikiTooltip {
+    visibility: hidden;
+    opacity: 0;
+    width: 75px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    right: 130%;
+    font-size: 12px;
+    line-height: 20px;
+    transition: visibility 0s linear 0.25s, opacity 0.25s ease;
+}
+
+#wikiTooltip::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.75);
+}
+
+.mediaButton:hover #wikiTooltip,
+#wikiURL:hover #wikiTooltip,
+#wikiURL:focus #wikiTooltip {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+
+/* nc. */
+
+#projectSVG {
+    fill: white;
+}
+
+#projectSVG:hover,
+#projectURL:focus #projectSVG {
+    fill: #4a7fff;
+}
+
+#projectSVG:active {
+    fill: #2a5fdf;
+}
+
+#ncetionMediaContainer {
+    position: relative;
+}
+
+#ncetionTooltip {
+    visibility: hidden;
+    opacity: 0;
+    width: 75px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    right: 130%;
+    font-size: 12px;
+    line-height: 20px;
+    transition: visibility 0s linear 0.25s, opacity 0.25s ease;
+}
+
+#ncetionTooltip::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.75);
+}
+
+.mediaButton:hover #ncetionTooltip,
+.mediaButton:focus #ncetionTooltip,
+.mediaButton:active #ncetionTooltip {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+
+
+/* Creators1 */
+
+#creatorsMediaContainer {
+    position: relative;
+}
+
+#creatorsSVG {
+    fill: white;
+    transition: height 0.25s ease;
+}
+
+.mediaButton:hover #creatorsSVG,
+.mediaButton:focus #creatorsSVG {
+    fill: #dde7ff;
+    height: 23px;
+}
+
+.mediaButton:active #creatorsSVG {
+    fill: #ecf2ff;
+    height: 23px;
+}
+
+#creatorsTooltip {
+    visibility: hidden;
+    opacity: 0;
+    width: 75px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    right: 130%;
+    font-size: 12px;
+    line-height: 20px;
+    transition: visibility 0s linear 0.25s, opacity 0.25s ease;
+}
+
+#creatorsTooltip::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.75);
+}
+
+.mediaButton:hover #creatorsTooltip,
+.mediaButton:focus #creatorsTooltip,
+.mediaButton:active #creatorsTooltip {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
 
 
 /* Youtube icon colors. */
@@ -3540,19 +3718,299 @@ input:checked+.toggleSwitchSlider:before {
 * * */
 
 /* Button which opens the news view. */
+/* Main container. */
+#newsContainer {
+    position: absolute;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    transition: top 2s ease;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* News content container. */
+#newsContent {
+    height: 82vh;
+    width: 100%;
+    display: flex;
+    -webkit-user-select: initial;
+    position: relative;
+}
+
+/* Drop shadow displayed when content is scrolled out of view. */
+#newsContent:before {
+    content: '';
+    background: linear-gradient(rgba(0, 0, 0, 0.25), transparent);
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+#newsContent[scrolled]:before {
+    opacity: 1;
+}
+
+/* News article status container (left). */
+#newsStatusContainer {
+    width: calc(30% - 60px);
+    height: calc(100% - 30px);
+    padding: 15px 15px 15px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* News status content. */
+#newsStatusContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* News title wrapper. */
+#newsTitleContainer {
+    display: flex;
+    max-width: 90%;
+}
+
+/* News article title styles. */
+#newsArticleTitle {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Avenir Medium';
+    color: white;
+    text-decoration: none;
+    transition: 0.25s ease;
+    outline: none;
+    text-align: right;
+}
+#newsArticleTitle:hover,
+#newsArticleTitle:focus {
+    text-shadow: 0px 0px 20px white;
+}
+#newsArticleTitle:active {
+    color: #c7c7c7;
+    text-shadow: 0px 0px 20px #c7c7c7;
+}
+
+/* News meta container. */
+#newsMetaContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Date and author wrappers. */
+#newsArticleDateWrapper,
+#newsArticleAuthorWrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Date and author shared styles. */
+#newsArticleDate,
+#newsArticleAuthor {
+    display: inline-block;
+    font-size: 10px;
+    padding: 0px 5px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+/* Date styles. */
+#newsArticleDate {
+    background: white;
+    color: black;
+    margin-top: 5px;
+}
+
+/* Author styles. */
+#newsArticleAuthor {
+    background: #a02d2a;
+}
+
+/* News article comments styles. */
+#newsArticleComments {
+    margin-top: 5px;
+    display: inline-block;
+    font-size: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.25s ease;
+    outline: none;
+    text-align: right;
+}
+#newsArticleComments:focus,
+#newsArticleComments:hover {
+    color: #e0e0e0;
+}
+#newsArticleComments:active {
+    color: #c7c7c7;
+}
+
+/* Article content container (right). */
+#newsArticleContainer {
+    width: calc(100% - 25px);
+    height: 100%;
+    margin: 0px 0px 0px 25px;
+}
+
+/* Article content styles. */
+#newsArticleContentScrollable {
+    font-size: 12px;
+    overflow-y: scroll;
+    height: 100%;
+    padding: 0px 15px 0px 15px;
+}
+#newsArticleContentScrollable img,
+#newsArticleContentScrollable iframe {
+    max-width: 95%;
+    display: block;
+    margin: 0 auto;
+}
+#newsArticleContentScrollable a {
+    color: rgba(202, 202, 202, 0.75);
+    transition: 0.25s ease;
+    outline: none;
+}
+#newsArticleContentScrollable a:hover,
+#newsArticleContentScrollable a:focus {
+    color: rgba(255, 255, 255, 0.75);
+}
+#newsArticleContentScrollable a:active {
+    color: rgba(165, 165, 165, 0.75);
+}
+#newsArticleContentScrollable::-webkit-scrollbar {
+    width: 2px;
+}
+#newsArticleContentScrollable::-webkit-scrollbar-track {
+    display: none;
+}
+#newsArticleContentScrollable::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.50);
+}
+.bbCodeSpoilerButton {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.25s ease;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+}
+.bbCodeSpoilerButton:hover,
+.bbCodeSpoilerButton:focus {
+    text-shadow: 0px 0px 20px #ffffff, 0px 0px 20px #ffffff, 0px 0px 20px #ffffff;
+}
+.bbCodeSpoilerButton:active {
+    color: #c7c7c7;
+    text-shadow: 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7;
+}
+.bbCodeSpoilerText {
+    display: none;
+    padding: 15px 0px;
+    border-bottom: 1px solid white;
+}
+
+
+#newsArticleContentWrapper {
+    width: 80%;
+}
+
+.newsArticleSpacerTop {
+    height: 15px;
+}
+
+/* Div to add spacing at the end of a news article. */
+.newsArticleSpacerBot {
+    height: 30px;
+}
+
+/* News navigation container. */
+#newsNavigationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    -webkit-user-select: none;
+    position: absolute;
+    bottom: 15px;
+    right: 0px;
+}
+
+/* Navigation status span. */
+#newsNavigationStatus {
+    font-size: 12px;
+    margin: 0px 15px;
+}
+
+/* Left and right navigation button styles. */
+#newsNavigateLeft,
+#newsNavigateRight {
+    background: none;
+    border: none;
+    outline: none;
+    height: 20px;
+    cursor: pointer;
+}
+#newsNavigateLeft:hover #newsNavigationLeftSVG,
+#newsNavigateLeft:focus #newsNavigationLeftSVG,
+#newsNavigateRight:hover #newsNavigationRightSVG,
+#newsNavigateRight:focus #newsNavigationRightSVG {
+    -webkit-filter: drop-shadow(0px 0px 2px #fff);
+}
+#newsNavigateLeft:active #newsNavigationLeftSVG .arrowLine,
+#newsNavigateRight:active #newsNavigationRightSVG .arrowLine {
+    stroke: #c7c7c7;
+}
+#newsNavigateLeft:active #newsNavigationLeftSVG,
+#newsNavigateRight:active #newsNavigationRightSVG {
+    -webkit-filter: drop-shadow(0px 0px 2px #c7c7c7);
+}
+#newsNavigateLeft:disabled #newsNavigationLeftSVG .arrowLine,
+#newsNavigateRight:disabled #newsNavigationRightSVG .arrowLine {
+    stroke: rgba(255, 255, 255, 0.75);
+}
+#newsNavigationLeftSVG {
+    transform: rotate(-90deg);
+    width: 15px;
+}
+#newsNavigationRightSVG {
+    transform: rotate(90deg);
+    width: 15px;
+}
+
+/* News error (message) container. */
+#newsErrorContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#newsErrorFailed {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #newsButton {
     background: none;
     border: none;
     cursor: pointer;
     outline: none;
-    display: none;
 }
-
 #newsButton:hover #newsButtonText,
 #newsButton:focus #newsButtonText {
     text-shadow: 0px 0px 20px #fff, 0px 0px 20px #fff;
 }
-
 #newsButton:active {
     color: #c7c7c7;
     text-shadow: 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7;
@@ -3562,15 +4020,12 @@ input:checked+.toggleSwitchSlider:before {
 #newsButton:focus #newsButtonSVG {
     -webkit-filter: drop-shadow(0px 0px 2px #fff);
 }
-
 #newsButton:active #newsButtonSVG .arrowLine {
     stroke: #c7c7c7;
 }
-
 #newsButton:active #newsButtonSVG {
     -webkit-filter: drop-shadow(0px 0px 2px #c7c7c7);
 }
-
 #newsButton:disabled #newsButtonSVG .arrowLine {
     stroke: rgba(255, 255, 255, 0.75);
 }
@@ -3603,6 +4058,36 @@ input:checked+.toggleSwitchSlider:before {
     line-height: 30px;
     display: flex;
     transition: 0.25s ease;
+}
+
+/* News error content (message). */
+.newsErrorContent {
+    font-size: 20px;
+}
+#newsErrorLoading {
+    display: flex;
+    width: 168.92px;
+}
+#nELoadSpan {
+    white-space: pre;
+}
+/* News error retry button styles. */
+#newsErrorRetry {
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    transition: 0.25s ease;
+}
+#newsErrorRetry:focus,
+#newsErrorRetry:hover {
+    text-shadow: 0px 0px 20px white;
+}
+#newsErrorRetry:active {
+    color: #c7c7c7;
+    text-shadow: 0px 0px 20px #c7c7c7;
 }
 
 /* * *
@@ -4205,6 +4690,372 @@ input:checked+.toggleSwitchSlider:before {
 #accountSelectCancel:active {
     color: rgba(165, 165, 165, 0.75);
 }
+
+/*******************************************************************************
+ *                                                                             *
+ * Creators View (creators.ejs)                                                *
+ *                                                                             *
+ ******************************************************************************/
+ 
+#creatorsContainer {
+    position: relative;
+    height: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.50);
+    transition: background-color 0.25s cubic-bezier(.02, .01, .47, 1);
+}
+ 
+/* ── ЛЕВАЯ ПАНЕЛЬ ── */
+#creatorsContainerLeft {
+    padding-top: 4%;
+    height: 100%;
+    width: 25%;
+    box-sizing: border-box;
+}
+ 
+#creatorsNavContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+ 
+#creatorsNavHeader {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+}
+ 
+#creatorsNavHeaderText {
+    font-size: 20px;
+    font-family: 'Avenir Medium';
+}
+ 
+#creatorsNavItemsContainer {
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+ 
+#creatorsNavItemsContent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+ 
+.creatorsNavItem {
+    background: none;
+    border: none;
+    text-align: left;
+    margin: 5px 0px;
+    padding: 0px 20px;
+    color: grey;
+    cursor: pointer;
+    outline: none;
+    transition: 0.25s ease;
+    font-family: 'Avenir Book';
+    font-size: 14px;
+}
+ 
+.creatorsNavItem:hover,
+.creatorsNavItem:focus {
+    color: #c1c1c1;
+    text-shadow: 0px 0px 20px #c1c1c1;
+}
+ 
+.creatorsNavItem.active {
+    cursor: default;
+    color: white;
+}
+ 
+.creatorsNavSpacer { height: 25px; }
+ 
+#creatorsNavContentBottom {
+    position: absolute;
+    top: 65%;
+}
+ 
+.creatorsNavDivider {
+    width: 75%;
+    height: 1px;
+    background: rgba(126, 126, 126, 0.57);
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+ 
+#creatorsNavDone {
+    background: none;
+    border: none;
+    text-align: left;
+    margin: 5px 0px;
+    padding: 0px 20px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: 0.25s ease;
+    font-family: 'Avenir Book';
+    font-size: 14px;
+}
+ 
+#creatorsNavDone:hover,
+#creatorsNavDone:focus {
+    text-shadow: 0px 0px 20px white, 0px 0px 20px white;
+}
+ 
+#creatorsNavDone:active {
+    color: rgba(255, 255, 255, 0.75);
+}
+ 
+/* ── ПРАВАЯ ПАНЕЛЬ ── */
+#creatorsContainerRight {
+    height: 100%;
+    width: 75%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4%;
+    overflow: hidden;
+}
+ 
+#creatorsTabHeader {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    padding-right: 30px;
+}
+ 
+#creatorsTabHeaderText {
+    font-size: 20px;
+    font-family: 'Avenir Medium';
+}
+ 
+#creatorsTabHeaderDesc {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.60);
+    margin-top: 4px;
+}
+ 
+/* ── СЕТКА ── */
+#creatorsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    overflow-y: auto;
+    flex: 1;
+    align-content: start;
+}
+ 
+#creatorsGrid::-webkit-scrollbar { width: 2px; }
+#creatorsGrid::-webkit-scrollbar-track { display: none; }
+#creatorsGrid::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.50);
+}
+ 
+/* ── КАРТОЧКА ── */
+.creatorCard {
+    display: flex;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(126, 126, 126, 0.40);
+    border-radius: 3px;
+    overflow: visible;
+    transition: border-color 0.25s ease, background 0.25s ease;
+    animation: creatorCardIn 0.4s ease both;
+}
+ 
+@keyframes creatorCardIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+ 
+.creatorCard:hover {
+    background: rgba(40, 40, 40, 0.35);
+    border-color: rgba(180, 180, 180, 0.35);
+}
+ 
+/* ── СКИН ── */
+.creatorCardSkin {
+    width: 90px;
+    min-width: 90px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-left: 5px;
+    overflow: visible;
+}
+ 
+.creatorSkinImg {
+    height: 120px;
+    width: auto;
+    margin-bottom: -4px;
+    image-rendering: pixelated;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.6));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+ 
+.creatorCard:hover .creatorSkinImg {
+    transform: translateY(-4px) scale(1.04);
+    filter: drop-shadow(0 8px 10px rgba(0,0,0,0.8));
+}
+ 
+/* ── ТЕЛО ── */
+.creatorCardBody {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px 14px 12px 10px;
+    gap: 6px;
+}
+ 
+.creatorCardTop {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+ 
+.creatorCardName {
+    font-family: 'Avenir Medium';
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.5px;
+}
+ 
+/* Контейнер для ролей */
+.creatorCardRoles {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+ 
+/* Основная роль */
+.creatorCardRole {
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 2px 7px;
+}
+ 
+/* Доп роль — мельче и прозрачнее */
+.creatorCardRoleExtra {
+    font-size: 7px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 1px 5px;
+    opacity: 0.60;
+}
+ 
+.creatorCardDesc {
+    font-size: 11px;
+    color: rgba(200, 200, 200, 0.65);
+    line-height: 1.4;
+    font-family: 'Avenir Book';
+}
+ 
+/* ── СОЦСЕТИ ── */
+.creatorCardSocials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 4px;
+}
+ 
+.creatorSocialBtn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 2px;
+    font-family: 'Avenir Medium';
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+    color: var(--sc, #fff);
+    border: 1px solid color-mix(in srgb, var(--sc, #fff) 40%, transparent);
+    background: color-mix(in srgb, var(--sc, #fff) 8%, transparent);
+}
+ 
+.creatorSocialBtn::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+    transform: skewX(-20deg);
+}
+ 
+.creatorSocialBtn:hover::before {
+    animation: socialBtnShine 0.4s ease forwards;
+}
+ 
+@keyframes socialBtnShine {
+    from { left: -60%; }
+    to   { left: 120%; }
+}
+ 
+.creatorSocialBtn:hover {
+    background: color-mix(in srgb, var(--sc, #fff) 18%, transparent);
+    border-color: color-mix(in srgb, var(--sc, #fff) 70%, transparent);
+    box-shadow: 0 0 10px color-mix(in srgb, var(--sc, #fff) 25%, transparent);
+    transform: translateY(-1px);
+}
+ 
+.creatorSocialBtn:active {
+    transform: translateY(0px);
+    box-shadow: none;
+}
+ 
+/* ── ЗАГРУЗКА ── */
+#creatorsLoading {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 168px;
+}
+ 
+#creatorsLoadSpan { white-space: pre; }
+ 
+/* ── ОШИБКА ── */
+.creatorsError {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 0;
+    color: rgba(202, 202, 202, 0.75);
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 2;
+}
+ 
+
+
+
+
+
+
+
 
 /*******************************************************************************
  *                                                                             *

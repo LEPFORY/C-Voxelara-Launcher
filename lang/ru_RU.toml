@@ -22,7 +22,7 @@ newsErrorNoneSpan = "Нету новостей"
 loginCancelText = "Отмена"
 loginSubheader = "Оффлайн логин"
 loginEmailError = "* Invalid Value"
-loginEmailPlaceholder = "EMAIL ИЛИ НИКНЕЙМ"
+loginEmailPlaceholder = "НИКНЕЙМ"
 loginPasswordError = "* Обязательно"
 loginPasswordPlaceholder = "ПАРОЛЬ"
 loginForgotPasswordLink = "https://hm380678.webhm.pro/"
@@ -169,7 +169,7 @@ loading = "Загрузка..."
 
 [js.landing.serverStatus]
 server = "СЕРВЕР"
-offline = "ОФФЛАЦН"
+offline = "ОФФЛАЙН"
 players = "ИГРОКОВ"
 
 [js.landing.systemScan]
@@ -206,12 +206,12 @@ errorDuringFileDownloadTitle = "Ошибка при загрузке файло�
 preparingToLaunch = "Подготовка к запуску..."
 launchingGame = "Запуск игры..."
 launchWrapperNotDownloaded = "Основной файл LaunchWrapper не был загружен должным образом. В результате игра не может быть запущена.<br><br>Для устранения проблемы временно отключите антивирус и запустите игру снова.<br><br>Если есть возможность, <a href=\"https://github.com/dscalzi/HeliosLauncher/issues\">создайте issue</a> и укажите используемый антивирус. Мы постараемся решить эту проблему."
-doneEnjoyServer = "Готово. Приятной игры!"
+doneEnjoyServer = "Готово. Загружаем игру, подождите!"
 checkConsoleForDetails = "Пожалуйста, откройте консоль (CTRL + Shift + i) для подробностей."
 
 
 [js.landing.news]
-checking = "Ищем новости..."
+checking = "Ищем новости"
 
 [js.landing.discord]
 loading = "Загружаем игру.."
